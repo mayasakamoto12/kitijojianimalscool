@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (min-width:641px) {	
+
+body {
+    width: 1300px;
+    margin: 0 auto;
+}
+  p,a,h1,h2{
+    color: #372c01;
+  }
+  
+/*----ハンバーガー----*/
+#menu-btn-check{
+    display: none;
+	}
+	.menu-content{
+    display: none;
+	}
+/*----ロゴ----*/
+header .logo{
+    margin-top:30px;
+    margin-left: 30px;
+}
+/*----カテゴリ----*/
+.test5{
+    color: #372c01;
+    background: #ffcc00;
+    text-align: center;
+    padding: 10px 0;
+}
+.test5::before{
+    content: "-";
+    color:#ff7400;
+}
+.test5::after{
+    content: "-";
+    color:#ff7400;
+}
+/*----ナビゲーション----*/
+.menu{
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.menu ul{
+     display: flex;
+    padding:0 0;
+
+}
+.menu li{
+    margin-right: 50px;
+}
+.menu a{
+    font-size: 1.2em;
+    letter-spacing:0.5em;
+    font-weight: bolder;
+    padding:20px 20px;
+    color: white;
+    border-radius: 10px;
+    background: #ff7400;
+}
+.menu a:hover{
+    background-color: #fff;
+    border:solid #ff7400;
+    color: #ff7400;
+}
+#main{
+    height:500px;
+    width: 100%;
+    background-image: url("../images/main.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#siryou{
+    background-image: url("../../common/images/siryou.png");
+    height: 260px;
+    width:260px;
+    z-index: 10;
+    float: right;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -93px;
+    right: -8px;
+    transition-duration: 0.5s;
+  }
+#siryou:hover{
+    transform: scale(1.1) rotate(9deg);
+    transition-duration: 0.5s;
+}
+/*----コース一覧----*/
+#course_nav{
+    padding:150px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+/*----コース----*/
+.course{
+    height: 500px;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  }
+.course div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+.course h1{
+    background: #ff7400;
+    padding: 14px 50px;
+    color: #fff;
+    margin-bottom: 50px;
+    letter-spacing: 0.2rem;
+    width: 100%;
+    text-align: center;
+  }
+.course h2{
+    margin-bottom: 50px;
+  }
+.course a{
+    margin-top: 50px;
+    background:  #ffcc00;
+    padding: 20px 50px;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 10px;
+    letter-spacing: 0.5rem;
+  }
+.course a:hover{
+    padding: 17px 47px;
+    background: #fff;
+    color: #ffcc00;
+    border: solid #ffcc00;
+  }
+.course img{
+    width: 600px;
+  }
+.course p{
+    font-weight: bold;
+  }
+/*----contact----*/
+#main9{
+    margin-top: 50px;
+    position: relative;
+}
+.contact{
+    background-color: #feffe0;
+    height: 237px;
+    width: 1300px;
+    margin: 150px 0 150px 0;
+}
+.contact ul{
+    display: flex;
+    justify-content: space-around;
+  }
+.cat{
+    position: absolute;
+    top: 71px;
+    left: 205px;
+}
+.mail{
+    width: 397px;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 30px;
+}
+.mail p{
+    font-weight: bold;
+    line-height: 2;
+    color: #372c01;
+}
+.mail li{
+    display: inline-block;
+    margin-left: 44px;
+    margin-top: 35px;
+    transition: all 0.8s ease 0s;
+}
+.mail li:hover{
+    cursor: pointer;
+    transform: rotateZ(180deg);
+}
+    /*----footer----*/
+    #bbb{
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    margin-top: 30px;
+    background-color: #feffe0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+#bbb h1{
+        color: #372c01;
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+#bbb a{
+         color: #372c01;
+    }
+#bbb a:hover{
+    cursor: pointer;
+    }
+#bbb a::after{
+        display: block;
+        content: '';
+        width: 3px;
+        height: 1px;
+        background: #32a836;
+        transition: all 0.3s ease 0s;
+    }
+#bbb a:hover::after{
+        width: 100%;
+    }
+#footer1 a:hover::after{
+        width: 70%;
+    }
+#footer2,#footer4{
+    margin-top:20px;
+  }
+footer li{
+    margin-top: 10px;
+  }
+.foot_logo img{
+    display: block;
+    margin: 20px  auto 10px auto;
+  }
+.foot_logo p{
+    text-align: center;
+  }
+}
